@@ -42,10 +42,6 @@ body{
     padding-inline: 2.6rem;
 }
 
-.card{
-    background-color: var(--card-color);
-}
-
 button{
     background: none;
 
@@ -195,8 +191,6 @@ a{
     height: 100%;
 
     padding: 2.4rem;
-
-    position: relative;
 }
 
 .card__content:hover{
