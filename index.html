@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-        <title>Frontend Mentor | Time tracking dashboard</title>
-        <link rel="stylesheet" href="site.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <main class="main">
-            <div class="main__personal">
-                <div class="personal__header">
-                    <img class="personal__photo" src="images/image-jeremy.png" alt="foto de perfil do homem Jeremy Robson">
-                    <h3 class="personal__report">Report for</h3>
-                    <h1 class="personal__name">Jeremy Robson</h1>
-                </div>
 
-                <nav class="personal__navbar">
-                    <ul class="personal__list">
-                        <li class="personal__item">
-                            <button class="personal__button">Daily</button>
-                        </li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
 
-                        <li class="personal__item">
-                            <button class="personal__button active">Weekly</button>
-                        </li>
-
-                        <li class="personal__item">
-                            <button class="personal__button">Monthly</button>
-                        </li>
-                    </ul>
-                </nav>
+<body>
+    <main class="main">
+        <div class="main__personal">
+            <div class="personal__header">
+                <img class="personal__photo" src="images/image-jeremy.png" alt="foto de perfil do homem Jeremy Robson">
+                <h3 class="personal__report">Report for</h3>
+                <h1 class="personal__name">Jeremy Robson</h1>
             </div>
 
-            <ul class="main__cards"></ul>
-        </main>
+            <nav class="personal__navbar">
+                <ul class="personal__list">
+                    <li class="personal__item">
+                        <button data-frequency="daily" id="daily" class="personal__button">Daily</button>
+                    </li>
 
-        <script src="index.js"></script>
-    </body>
+                    <li class="personal__item">
+                        <button data-frequency="weekly" id="weekly" class="personal__button active">Weekly</button>
+                    </li>
+
+                    <li class="personal__item">
+                        <button data-frequency="monthly" id="monthly" class="personal__button">Monthly</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <ul class="main__cards"></ul>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
 </html>
